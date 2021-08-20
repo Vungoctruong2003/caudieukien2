@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+</head>
+<body>
+<p id="result"></p>
+<table>
+    <tr>
+        <td>Your Weight:</td>
+        <td> Your Height:</td>
+    </tr>
+    <tr>
+        <td><input type="number" id="nag"></td>
+        <td><input type="number" id="cao"></td>
+        <td>
+            <button onclick="tinhBMI()"> Your BMI</button>
+        </td>
+    </tr>
+
+</table>
+<script>
+    function tinhBMI() {
+
+        let W = parseInt(document.getElementById("nag").value);
+        let H = parseInt(document.getElementById("cao").value);
+        let kq = W / (H * H);
+        // document.getElementById("result").innerHTML ="Your BMI:"+ kq;
+        if (kq < 18)
+            document.write("Underweight");
+        else if (kq < 25.0)
+            document.write("Normal");
+        else if (kq < 30.0)
+            document.write("Overweight");
+        else
+            document.write("Obese");
+    }
+
+</script>
+</body>
+</html>
