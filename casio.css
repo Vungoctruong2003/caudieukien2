@@ -1,0 +1,25 @@
+table{
+    background-color: bisque;
+    width: 300px;
+    height: 300px;
+}
+#show{
+width:260px;
+    height: 40px;
+}
+#clear{
+    width: 35px;
+height: 35px;
+    background-color: red;
+    color: ghostwhite;
+}
+tr td button{
+    width: 35px;
+    height: 35px;
+}
+#result{
+    width: 35px;
+    height: 35px;
+    background-color: blue;
+    color: ghostwhite;
+}
